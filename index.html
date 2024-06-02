@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ezequiel">
+    <title>Ezequiel</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dist/css/theme-elements.css">
+    <link rel="stylesheet" href="assets/dist/css/default.css">
+    <link rel="stylesheet" href="assets/vendor/sweetalert/sweetalert.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="assets/dist/css/app.css">
+
+    <link rel="stylesheet" href="assets/dist/css/simple-line-icons.min.css">
+
+    <script src="assets/dist/js/modernizr.min.js"></script>
+
+    <style>
+        #text-footer {
+            font-family: 'Arial', sans-serif;
+            font-size: 2rem;
+            color: #00f;
+            text-align: center;
+            text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #00f,
+                0 0 30px #00f,
+                0 0 40px #00f,
+                0 0 50px #00f,
+                0 0 75px #00f;
+            animation: neon 1.5s infinite alternate;
+        }
+
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 20px #00f,
+                    0 0 30px #00f,
+                    0 0 40px #00f,
+                    0 0 50px #00f,
+                    0 0 75px #00f;
+            }
+
+            to {
+                text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff,
+                    0 0 30px #00f,
+                    0 0 40px #00f,
+                    0 0 50px #00f,
+                    0 0 60px #00f,
+                    0 0 70px #00f,
+                    0 0 100px #00f;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="body"
+        style="background-color: #001321; background-size: cover;background-repeat: no-repeat;background-attachment: fixed;background-position: center;min-height: 100vh">
+
+        <div class="sticky-top" style="background-color: #000;">
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="assets/resources/img/freefire.png" width="150px" alt="">
+                <span class="ml-3" style="color: #ce7209; border-bottom: 1px solid #ce7209; padding-bottom: 2px;">
+                    DONATIONS
+                </span>
+                <img src="assets/resources/img/globe.png" class="mr-3" width="24px" alt="" style="margin-left: auto;">
+            </div>
+
+        </div>
+
+        <div role="main" class="main">
+
+            <div class="container align-items-center col-10 col-md-8 col-lg-3 mt-5" style="height: 100vh">
+
+                <div class="py-3">
+
+                    <div class="text-center mb-3">
+                        <h1
+                            class="text-center text-secondary word-rotator rotate-1 appear-animation animated rubberBand appear-animation-visible">
+                            <span class="small-ff" style="font-family: 'merienda', sans-serif;">FF</span>
+
+                            <span class="word-rotator-words" style="width: 114.016px;">
+                                <b class="is-hidden">DIAMANTES</b>
+                                <b class="is-hidden">DIAMANTES</b>
+                                <b class="is-visible">DIAMANTES</b>
+                            </span>
+                            <span class="small-ff" style="font-family: 'orbitron', sans-serif;">FF</span>
+                            <div class="row justify-content-center">
+                                <img src="assets/resources/img/camiseta.png" width="24px" class="px-1" alt="">
+                                <img src="assets/resources/img/cap.png" width="24px" class="px-1" alt="">
+                                <img src="assets/resources/img/sneakers.png" width="24px" class="px-1" alt="">
+                                <img src="assets/resources/img/trousers.png" width="24px" class="px-1" alt="">
+                            </div>
+                        </h1>
+                    </div>
+
+                    <div class="row justify-content-center sticky-top">
+                        <div class="col-10 col-md-8 col-lg-8">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                    style="background-color: rgba(0, 0, 0, 0.6); border: none">
+                                    <img src="assets/resources/img/icon-user.png" width="32px" alt="">
+                                </span>
+                                <input class="form-control text-1 text-white" id="insert-your-id" type="text"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Nombre de usuario"
+                                    required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                    style="background-color: rgba(0, 0, 0, 0.6); border: none">
+                                    <img src="assets/resources/img/diamond.png" width="32px" alt="">
+                                </span>
+                                <input class="form-control text-1 text-white" id="diamonds" type="number"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Diamantes" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="d-none nav nav-pills sort-source sort-source-style-3 justify-content-center"
+                        data-sort-id="portfolio" data-option-key="filter"
+                        data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
+
+                    <div class="row justify-content-center my-2">
+                        <button id="generate" type="button" class="btn btn-dark mt-1"
+                            style="border-radius: 1%; background-color: #E74C3C">
+                            <span style="font-size: 1rem; font-family: 'orbitron', sans-serif;">GENERAR</span>
+                        </button>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <div id="spinner" class="spinner-border text-danger d-none" role="status">
+                            <span class="visually-hidden"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <section class="call-to-action featured featured-secondary d-none mb-5">
+                    <div class="col-sm-9 col-lg-9">
+                        <div class="call-to-action-content alert-dismissible">
+                            <h5>Diamantes generados:</h5>
+                            <p class="mb-0">
+                                <span id="username" class="text-primary font-weight-bold alternative-font-2">
+
+                                </span>
+                                <img src="assets/resources/img/diamond.png" width="24px" alt="">
+                                <strong id="quantityDiamonds" style="color: #F4D03F; font-weight: 2500;">
+
+                                </strong>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="text-center">
+                    <img id="image-in-body" src="assets/resources/img/image.png" width="200px" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Vendor Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/libs/common.min.js"></script>
+    <script src="assets/vendor/libs/isotope.min.js"></script>
+    <script src="assets/dist/js/theme.js"></script>
+    <script src="assets/dist/js/init.js"></script>
+    <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/dist/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</body>
+
+</html>
